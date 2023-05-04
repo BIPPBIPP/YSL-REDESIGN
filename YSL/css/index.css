@@ -1,0 +1,119 @@
+/* rest */
+*{margin: 0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+ul,ol{list-style: none;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+
+/* 2.common */
+html{
+    background-color: #000;
+    font-size: 12px;
+    font-family: font-family: 'Roboto', sans-serif;;
+}
+
+
+/* 3.layout */
+
+/* header */
+
+header{
+    border: 1px solid red;
+    width: 100%;
+    height: 30px;
+    margin: 90px 0;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.innerHead{
+    border: 1px solid salmon;
+    width: 1760px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerHead>.left_logo{
+    border: 1px solid gold;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+}
+.left_logo>section{
+    width: 300px;
+    height: 100%;
+}
+.left_logo>.bar{
+    width:30px; 
+    height: 15px;
+    margin-right: 20px;
+}
+
+.innerHead>.topicon{
+    border: 1px solid aqua;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.innerHead>.topicon img{
+    border: 1px solid gold;
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+
+/* main */
+main{
+    border: 10px solid blue;
+    width: 100%;
+    height: 100%;
+}
+.backimg{
+    border: 1px solid aqua;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+.backimg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainimg{
+    border: 10px solid salmon;
+    width: 600px;
+    height: ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mainimg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.typo{
+    border: 1px solid gold;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    transform: translate(-10%,-20%);
+}
+.typo>img{
+    width: 825px;
+    height: 325px;
+}
