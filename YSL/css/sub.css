@@ -1,0 +1,337 @@
+/* rest */
+*{margin: 0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+ul,ol{list-style: none;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+select{border-style: none;}
+
+/* 2.common */
+html{
+    /* border: 10px solid red; */
+    box-sizing: border-box;
+    background-color: #000;
+    font-size: 12px;
+    font-family:'Roboto Condensed', sans-serif;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 3.layout */
+
+/* header */
+
+header{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 30px;
+    margin: 90px 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.innerHead{
+    /* border: 1px solid salmon; */
+    width: 1760px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerHead>.left_logo{
+    /* border: 1px solid gold; */
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+}
+.left_logo>section{
+    width: 300px;
+    height: 100%;
+}
+.left_logo>.bar{
+    width:30px; 
+    height: 15px;
+    margin-right: 20px;
+}
+.mainMenu{
+    /* border: 1px solid lime; */
+    width: 550px;
+    height: 970px;
+    background: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: normal;
+    position: absolute;
+    /* left: -100%;
+    transform: translateX(100%);
+    top:0; */
+    z-index: 1001;
+    padding-left: 60px;
+    display: none;
+}
+.mainMenu>.Mlogo{margin-top: 90px;}
+.mainMenu>.Mlogo>.close{
+    width: 30px;
+    height: 30px;
+    padding: 0 20px;
+}
+.mainMenu>.Mlogo>.bLogo{
+    width: 288px;
+    height: 30px;
+}
+.mainMenu>.topMenu{
+    /* border: 1px solid green; */
+    margin: 20px 0 200px 20px;
+    margin-bottom: 150px;
+}
+
+.mainMenu>.bottomMenu{
+    /* border: 1px solid red; */
+    margin: 20px 0 0 20px;
+}
+.mainMenu>.botImg>img{
+    /* z-index: 1001; */
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    box-shadow: 10px 10px 3px #666;
+}
+
+
+.innerHead>.topicon{
+    /* border: 1px solid aqua; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.innerHead>.topicon img{
+    /* border: 1px solid gold; */
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+/* sub1 header */
+.toptitle{
+    /* border: 1px solid red; */
+    color: #fff;
+    font-size: 5rem;
+}
+.toptitle::after{
+    content: '';
+    width: 1760px;
+    height: 1px;
+    background: #fff ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+
+/* sub1 main */
+
+.mainContainer{
+    border: 11px solid gold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1760px;
+}
+
+.subTop{
+    /* border: 10px solid blue; */
+    width: 1760px;
+    height: 780px;
+    margin-top: 50px;
+    padding-top: 120px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.mainLeft{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 780px;
+    position: relative;
+}
+.circleLeft{
+    width: 400px;
+    height: 788px;
+}
+.typoLeft{
+    width: 590px;
+    height: 290px;   
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.mainRight{
+    /* border: 1px solid red; */
+    padding-left:35px;
+}
+.mainRight>video{
+    /* border: 1px solid lime; */
+    width: 990px;
+    height: 630px;
+}
+
+.clothes>.title{
+    border: 1px solid salmon;
+   margin: 0 auto;
+}
+.clothes>.subtitle1>h1{
+    border: 1px solid lime;
+    width: 450px;
+    color: #fff;
+    font-size: 5rem;
+    margin: 50px 60%;
+    transform: translateX(-60%);
+}
+.clothes>.topclo{
+    border: 1px solid red;
+    display: flex;
+}
+.clothes>.topclo>.left{
+display: flex;
+}
+.clothes>.topclo img{
+    width: 250px;
+    height: 450px;
+}
+
+/* footer */
+
+
+footer{
+    /* border: 1px solid aqua; */
+    box-sizing: border-box; 
+    width: 100%;
+    height: 250px;
+    color:#fff;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: lighter;
+}
+.fContainer{
+    /* border: 1px solid pink; */
+    width: 1780px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.fLogo{
+    width: 255px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.fMenu{
+     /* border:1px solid orange ; */
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.mLeft{
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 450px;
+    height: 100%;
+    /* border: 1px solid lime; */
+}
+
+.mLeft>.select{
+    /* border: 1px solid lime; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.mLeft label{
+    /* border: 1px solid gold; */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.mLeft select{
+    /* border: 1px solid gold; */
+    color: #fff;
+    background: #000;
+    padding: 3px 10px 3px 10px;
+    margin-right: 30px;
+}
+.mLeft>.select>section>#lang_country{margin-right: 0;}
+
+.mLeft>.address>p{font-size:0.5rem;margin-bottom: 10px;}
+
+.mMid{
+    /* border: 1px solid red; */
+    width: 625px;
+    height:100%;
+    color: #fff;
+    position: absolute;
+    left: 60%; top: 0;
+    transform: translateX(-60%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* .mMid>section{border: 1px solid lime;} */
+.mMid>section>ul>li h4{
+    font-size: 1.2rem; 
+    padding-bottom: 10px;
+}
+.mMid>section>ul>li h4::after{
+    /* border: 1px solid red; */
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background: url(../img/SVG/arrow.svg) no-repeat 50% 50%;
+}
+.mMid>section>ul>li>ul>li{
+    font-size: 0.9rem;
+    color:#ccc;
+    padding-bottom: 6px;
+}
+
+
+.mRight{
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.footicon img{
+    /* border: 1px solid gold; */
+    flex: 1;
+    width: 25px;
+    height: 25px;
+    padding: 0 10px;
+}
