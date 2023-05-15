@@ -128,6 +128,7 @@ header{
     /* border: 1px solid red; */
     color: #fff;
     font-size: 5rem;
+    text-align: center;
 }
 .toptitle::after{
     content: '';
@@ -144,7 +145,7 @@ header{
 /* sub1 main */
 
 .mainContainer{
-    border: 11px solid gold;
+    border: 1px solid gold;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -156,6 +157,7 @@ header{
     width: 1760px;
     height: 780px;
     margin-top: 50px;
+    /* margin-bottom: 50px; */
     padding-top: 120px;
     position: relative;
     display: flex;
@@ -191,29 +193,163 @@ header{
     height: 630px;
 }
 
-.clothes>.title{
-    border: 1px solid salmon;
-   margin: 0 auto;
+.clothes{
+    /* border: 1px solid red;  */
+    margin-top: 50px;
 }
-.clothes>.subtitle1>h1{
+.clothes>.subTitle>h1{
     border: 1px solid lime;
     width: 450px;
     color: #fff;
     font-size: 5rem;
-    margin: 50px 60%;
-    transform: translateX(-60%);
+    margin: 50px 55%;
+    transform: translateX(-55%);
+    text-align: center;
 }
 .clothes>.topclo{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.clothes>.topclo>li:after{
+    content: '';
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 30px;
+    background: url(../img/SVG/dir_right.svg) no-repeat 50% 50%;
+    position: absolute;
+    right: 41%;
+    bottom: 40%;
+    transform: translate(-41%,-40%);
 }
 .clothes>.topclo>.left{
-display: flex;
+    /* border: 1px solid blue */
+    height: 450px;
+    display: flex;
+    
+}
+.clothes>.topclo>.left>ul{
+    /* border: 1px solid lime; */
+    display: flex;
+    width: calc(250px*3);
+    height: 450px;
+    overflow: hidden;
+    
+}
+
+.clothes>.topclo>.right>ul{
+    /* border: 1px solid lime; */
+    display: flex;
+    width: calc(250px*2);
+    height: 450px;
+    overflow: hidden;
 }
 .clothes>.topclo img{
     width: 250px;
     height: 450px;
 }
+
+.clothes>.bottomclo{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.clothes>.bottomclo>li:after{
+    content: '';
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 30px;
+    background: url(../img/SVG/dir_left.svg) no-repeat 50% 50%;
+    position: absolute;
+    left: 43%;
+    bottom: 40%;
+    transform: translate(-43%,-40%);
+}
+.clothes>.bottomclo>.left>ul{
+    display: flex;
+    width: calc(250px*2);
+    height: 450px;
+    overflow: hidden;
+}
+
+.clothes>.bottomclo>.right>ul{
+    display: flex;
+    width: calc(250px*3);
+    height: 450px;
+    overflow: hidden;
+}
+
+.clothes>.bottomclo img{
+    width: 250px;
+    height: 450px;
+}
+
+.photos{
+    /* border: 1px solid violet; */
+    margin-top: 50px;
+}
+
+.photos>.photoTitle>h1{
+    border: 1px solid lime;
+    width: 450px;
+    color: #fff;
+    font-size: 5rem;
+    margin: 50px 55%;
+    transform: translateX(-55%);
+    text-align: center;
+}
+.photo1>.photoslide{
+    /* border: 1px solid red; */
+    margin-top: 125px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo1>.photoslide>.leftpho>img{
+    width: 410px;
+    height: 515px; 
+    opacity: 0.4;
+}
+.photo1>.photoslide>.leftpho:after{
+    content: '';
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 30px;
+    background: url(../img/SVG/dir_left.svg) no-repeat 50% 50%;
+    position: absolute;
+    left: 33%;
+    bottom: 45%;
+    transform: translate(-33%,-45%);
+}
+.photo1>.photoslide>.midpho>img{
+    width: 495px;
+    height: 745px;
+}
+.photo1>.photoslide>.rightpho>img{
+    width: 410px;
+    height: 515px;
+    opacity: 0.4;
+}
+.photo1>.photoslide>.rightpho:after{
+    content: '';
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 30px;
+    background: url(../img/SVG/dir_right.svg) no-repeat 50% 50%;
+    position: absolute;
+    right: 33%;
+    bottom: 45%;
+    transform: translate(-33%,-45%);
+}
+
+
+
+
+
+
 
 /* footer */
 
