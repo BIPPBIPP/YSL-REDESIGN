@@ -126,9 +126,14 @@ header{
 /* sub1 header */
 .toptitle{
     /* border: 1px solid red; */
+    width: 400px;
     color: #fff;
+   
+}
+.toptitle>h1{
     font-size: 5rem;
-    text-align: center;
+    margin: 0 auto;
+    
 }
 .toptitle::after{
     content: '';
@@ -145,7 +150,7 @@ header{
 /* sub1 main */
 
 .mainContainer{
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -193,17 +198,21 @@ header{
     height: 630px;
 }
 
+/* clothes */
 .clothes{
     /* border: 1px solid red;  */
     margin-top: 50px;
 }
-.clothes>.subTitle>h1{
-    border: 1px solid lime;
+.clothes>.subTitle{
+    /* border: 1px solid red; */
     width: 450px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.clothes>.subTitle>h1{
+    /* border: 1px solid lime; */
     color: #fff;
     font-size: 5rem;
-    margin: 50px 55%;
-    transform: translateX(-55%);
     text-align: center;
 }
 .clothes>.topclo{
@@ -286,23 +295,26 @@ header{
     height: 450px;
 }
 
+/* photos */
 .photos{
     /* border: 1px solid violet; */
     margin-top: 50px;
+    margin-bottom: 100px;
 }
-
-.photos>.photoTitle>h1{
-    border: 1px solid lime;
-    width: 450px;
+.photos>.photoTitle{
+    width: 400px;
     color: #fff;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.photos>.photoTitle>h1{
+    /* border: 1px solid lime; */
     font-size: 5rem;
-    margin: 50px 55%;
-    transform: translateX(-55%);
     text-align: center;
 }
+.photo1{margin-bottom: 100px;}
 .photo1>.photoslide{
     /* border: 1px solid red; */
-    margin-top: 125px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -310,7 +322,7 @@ header{
 }
 .photo1>.photoslide>.leftpho>img{
     width: 410px;
-    height: 515px; 
+    height: 514px; 
     opacity: 0.4;
 }
 .photo1>.photoslide>.leftpho:after{
@@ -325,8 +337,8 @@ header{
     transform: translate(-33%,-45%);
 }
 .photo1>.photoslide>.midpho>img{
-    width: 495px;
-    height: 745px;
+    width: 494px;
+    height: 744px;
 }
 .photo1>.photoslide>.rightpho>img{
     width: 410px;
@@ -344,10 +356,71 @@ header{
     bottom: 45%;
     transform: translate(-33%,-45%);
 }
+.photo2{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 1000px;
+    
+}
+.photo2>.section1{
+    display: flex; 
+    justify-content: center;
+    height: 50%;
+    /* border: 1px solid lime; */
+}
+.photo2>.section1>.show1{width: 360px;height: auto;}
+.photo2>.section1>.show2{width: 800px;height: auto;}
+.photo2>.section1>.show3{width:440px ;height: auto;}
 
+.photo2>.section2{
+    display: flex; 
+    justify-content: center;
+    height: 50%;
+    /* border: 1px solid lime; */
+}
+.photo2>.section2>.show4{width: 400px;}
+.photo2>.section2>.show5{width: 460px;}
+.photo2>.section2>.show6{width: 370px;}
+.photo2>.section2>.show7{width: 370px;}
 
+/* finphoto */
+.finphoto{
+    margin-bottom: 100px;
+}
+.textBox{
+    /* border: 1px solid pink; */
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.textBox>img{
+    width: 476px;
+    height: 46px;
+    margin-bottom: 20px;
+}
 
-
+.finMain{
+    /* border: 1px solid aqua; */
+    position: relative;
+}
+.finMain>img{
+    /* border: 1px solid red; */
+    width: 792px;
+    height: 444px;
+    margin: 0 484px;
+    
+}
+.finMain::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #ffffffec;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
 
 
 
