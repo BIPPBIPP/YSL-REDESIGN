@@ -29,8 +29,7 @@ html{
 header{
     /* border: 1px solid red; */
     width: 100%;
-    height: 30px;
-    margin: 90px 0;
+    margin-top: 30px;
     position: fixed;
     z-index: 1000;
 }
@@ -38,7 +37,6 @@ header{
 .innerHead{
     /* border: 1px solid salmon; */
     width: 1760px;
-    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -62,11 +60,35 @@ header{
     height: 15px;
     margin-right: 20px;
 }
+
+/* subpage Title */
+.toptitle{
+    /* border: 1px solid red; */
+    width: 800px;
+    color: #fff;  
+}
+.toptitle>h1{
+    font-size: 5rem;
+    margin: 0 auto;   
+    text-align: center;
+}
+.toptitle::after{
+    content: '';
+    width: 1760px;
+    height: 1px;
+    background: #fff ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* mainMenu */
 .mainMenu{
     /* border: 1px solid lime; */
     width: 550px;
     height: 970px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     font-size: 35px;
     font-weight: normal;
@@ -78,7 +100,7 @@ header{
     padding-left: 60px;
     display: none;
 }
-.mainMenu>.Mlogo{margin-top: 90px;}
+.mainMenu>.Mlogo{margin-top: 45px;}
 .mainMenu>.Mlogo>.close{
     width: 30px;
     height: 30px;
@@ -192,23 +214,23 @@ main{
     object-fit: cover;
 }
 .pagination{
-    border: 1px solid red;
-    width: 200px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 10%;
+    transform: translate(-50%,-10%);
 }
 ul.pagination>li{
-    border: 1px solid red;
     width: 20px;
     height: 20px;
     background:#fff;
     border-radius: 50%;
+    opacity: 70%;
 }
+ul.pagination>li:first-of-type{opacity: 1;}
 .typo{
     width: 750px;
     position: absolute;
@@ -244,27 +266,6 @@ main>.circle{
 
 
 /* sub1 header */
-.toptitle{
-    /* border: 1px solid red; */
-    width: 400px;
-    color: #fff;
-   
-}
-.toptitle>h1{
-    font-size: 5rem;
-    margin: 0 auto;
-    
-}
-.toptitle::after{
-    content: '';
-    width: 1760px;
-    height: 1px;
-    background: #fff ;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -20px;
-}
 
 
 /* sub1 main */
@@ -553,9 +554,127 @@ main>.circle{
 }
 
 
+/* sub2 - product */
 
+/* main */
+.subpage2{
+    /* border: 1px solid red; */
+    position: relative;
+}
 
+.topMain{
+    border: 1px solid pink;
+    width: 1760px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
+.topMain>.mainPoster{
+    border: 1px solid red;
+    width: 550px;
+    height: 713px;
+}
+.topMain>.mainPoster>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.topMain>.productPic{
+    width: 590px;
+    height: 800px;
+}
+.topMain>.productPic>img{
+    width: 590px;
+    height: 50%;
+    object-fit: cover;
+}
 
+.topMain>.productInfo{
+    width: calc(100% - 550px - 590px);
+    height: 800px;
+    background: #fff;
+    padding-left: 50px;
+}
+.productInfo>.explain{
+    border: 1px solid red;
+    margin-top: 200px;
+}
+/* font */
+.productInfo>.explain>h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.productInfo>.explain>h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.productInfo>.explain>h3{
+    font-size: 22px;
+    margin-right: 50px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.productInfo>.explain>h3:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 90px;
+    top: 3px;
+}
+.productInfo>.explain>ul{
+    margin-bottom: 50px;
+}
+.productInfo>.explain>ul>li>h3{
+    font-size: 22px;
+    margin-right: 50px;
+}
+.productInfo>.explain>ul>li{
+    display: flex;
+    align-items: center;
+}
+.productInfo>.explain>ul>li>ul{
+    border: 1px solid red;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.productInfo>.explain>ul>li>ul>li{
+    font-size: 20px;
+    color: #9a9a9a;
+}
+
+.explain>.proIcon{
+    /* border: 1px solid red; */
+    width: 300px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+.explain>.proIcon>img{
+    width: 40px;
+    height: 40px;
+}
+.explain>p{
+    font-size: 12px;
+    padding: 30px 0;
+    position: relative;
+}
+.explain>p:after{
+    border: 3px solid #9a9a9a;
+    width: 510px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
 
