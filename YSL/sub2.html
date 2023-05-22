@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subpage2 - product 상세페이지</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./js/index.js"></script>
+    <title>subpage2 -YSL </title>
 </head>
 <body>
-    <div class="mainMenu">
-        <div class="Mlogo">
-            <img class="close" src="./img/SVG/close_icon.svg" alt="close icon">
-            <img class="bLogo" src="./img/SVG/logo_black.svg" alt="">
+    <div class="menuContainer">
+        <div class="menuLogo">
+            <div class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="Mlogo">
+                <img src="./img/SVG/logo_black.svg" alt="">
+            </div>
         </div>
-        <ul class="topMenu">
+        <ul class="Menu1">
             <li class="collect"><a href="#"> summer collection 23</a>
                 <ul>
                     <li><a href="#"></a>woman's</a></li>
@@ -28,7 +35,7 @@
             <a href="#"><li>man</li></a>
             <a href="#"><li>accersory</li></a>
         </ul>
-        <ul class="bottomMenu">
+        <ul class="Menu2">
             <li>la masion
                 <ul>
                     <a href="#"><li>saint laurent</li></a>
@@ -38,7 +45,7 @@
             <a href="#"><li>collection</li></a>
             <a href="#"><li>saint laurent self</li></a>
         </ul>
-        <div class="botImg">
+        <div class="bottomImg">
             <img src="./img/menu/menu_IMAGE.jpg" alt="">
         </div>
     </div>
@@ -69,71 +76,65 @@
         </header>
         <div class="subpage2">
             <div class="mainContainer">
-                <div class="topMain">
-                    <figure class="mainPoster">
-                        <img src="./img/sunglass/main.jpg" alt="">
-                    </figure>
-                    <figure class="productPic">
-                        <img src="./img/sunglass/product1-80.jpg" alt="">    
-                        <img src="./img/sunglass/product2-80.jpg" alt="">        
-                    </figure>
-                    <div class="productInfo">
-                        <div class="explain">
-                            <h1>SL M119/F BLAZE</h1>
-                            <h2> $ 879.18</h2>
-                            <h3>Color</h3>
-                            <ul class="size">
-                                <li><h3>Size</h3>
-                                    <ul>
-                                        <li>XS</li>
-                                        <li>S</li>
-                                        <li>M</li>
-                                        <li>L</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <figure class="proIcon">
-                                <img src="./img/SVG/shop_black.svg" alt="">
-                                <img src="./img/SVG/heart.svg" alt="">
-                                <img src="./img/SVG/sharing.svg" alt="">
-                            </figure>
-                            <p>
-                                선글라스. 오버사이즈 캣아이 아세테이트 프레임, 나일론 렌즈, YSL 모노그램을 장식한 와이드 템플.
-                            </p>
-                        </div>
+                <section class="intro">
+                    <h2>About YSL</h2>
+                    <img src="./img/ysl/yslMain.png" alt="Yves Saint Laurent">
+                    <p>젊은 나이로 데뷔해 혁신적인 디자인으로 당대 사람들을 놀라게 했고, <br>
+                        최초의 프레타포르테 컬렉션, <br>
+                        최초로 여자에게 남자 수트를 입힌 디자이너.
+                        <br>
+                        <br>
+                        오뜨꾸뛰르에 최초로 스페인의 짚신이었던 에스파드류를 활용. <br>
+                        계속해서 군복을 여성 오뜨꾸뛰르로 해석. <br>
+                        최초로 오뜨꾸뛰르에 레오파드 패턴을 쓰기도 하고, <br>
+                        패션사에서 길이 남을 이벤트였던 음악과 퍼포먼스를 반영한 최초의 패션쇼를 시도하는 등등 <br>
+                        패션사에 큰 혁신을 불러일으켰다.</p>
+                </section>
+                <section class="explainYSL">
+                    <h2>Interview</h2>
+                    <img src="./img/ysl/image.jpg" alt="">
+                    <p class="videoInfo">
+                        PIERRE BERGÉ INTERVIEWS YVES SAINT LAURENT<br>
+                        (C) ESTATE JEANLOUP SIEFF<br>
+                        MUSÉE YVES SAINT LAURENT PARIS
+                    </p>
+                    <div class="explainP">
+                        <p>
+                            패션 디자이너 이브 생 로랑이 그의 배우자인 피에르 베르제(Pierre Berge)와 함께 1961년 프랑스 파리에서 설립했다.
+                        </p>
+                        <p>
+                            2013 F/W 컬렉션부터 디올 맨의 수장이었던 에디 슬리먼이 헤드 디자이너를 맡았으며 브랜드의 명칭을 Yves Saint Laurent에서 Sa int Laurent으로 바꾸었다. <br>
+                            이는 생 로랑이 더 이상 오트쿠튀르를 지향하지 않는 점을 짚어 1968년도에 설립했던 프레타포르테 브랜드인 Saint Laurent을 되살린다는 의미였다. <br>
+                            게다가 브랜드의 로고를 현대적인 느낌을 주기 위해 산세리프 서체를 사용해 새롭게 만들었다.
+                        </p>
+                        <p>
+                            그러나 카산드라 또는 모노그램이라고 불리는 YSL 로고는 여전히 생 로랑의 상징으로 사용되고 있으며 로레알 소속인 YSL Beauty와 액세서리 부문은 여전히 브랜드명에 Yves Saint Laurent을 사용하고 있다.
+                        </p>
+                        <p>
+                            이외에 에디 슬리먼의 특유 스타일을 따라 록 및 스키니 룩을 이어가고 있으며, 패션계에 무릎파열진의 열풍을 이끌었다.<br> 
+                            현재까지도 모터사이클 부츠와 가격 대비 타사의 청바지에 비해 질이 떨어진다는비판이 있음에도 생 로랑의 스키니진은 꾸준히 잘 판매되고 있다.
+                        </p>
+                        <p>
+                            여담으로 팬들 사이에서는 에디 슬리먼이 디자인한 무릎파열진의 디스와 워싱을 높게 평가해 녹워싱의 경우 다른 시즌에 비해 거래가가 월등히 높다.
+                        </p>
+                        <p>
+                            2016년 4월 1일, 생 로랑에 여러 변화를 이끌었던 에디 슬리먼이 브랜드를 떠난다고 발표되었다. <br>
+                            이후 베르사체의 세컨 라인인 베르수스(Versus)의 크리에이티브 디렉터로 있었던 안토니 바카렐로가 에디 슬리먼의 후임자로 생 로랑의 크리에이티브 디렉터의 자리를 맡게 되었다.
+                        </p>
+                        <p>
+                            안토니 바카렐로가 크리에이티브 디렉터를 맡은 이후 에디 슬리먼의 유산의 상당 부분을 지우는 모습을 보여줬다. 
+                            <br>
+                            특히 SNS 상에서 에디 슬리먼 시절의 포스트가 전부 삭제됐으며 공식적으로 생 로랑의 로고를 롤백하지는 않았지만 자신이 처음으로 맡은 2017 S/S 컬렉션에서 YSL 로고를 다수 사용했으며, YSL 로고를 강조한 가방과 같은 신상품을 다수 출시하며 에디 슬리먼 때보다 훨씬 YSL 로고를 많이 활용했다. 
+                            <br>
+                            2022년부터는 이전 서체 로고도 다시 사용되고 있다.
+                        </p>
                     </div>
-                </div>
-                <div class="modelWear">
-                    <h1>MODEL Wearing</h1>
-                    <section>
-                        <img src="img/modle/model1.jpg" alt="">
-                        <img src="img/modle/model2.jpg" alt="">
-                        <img src="img/modle/model3.jpg" alt="">
-                        <img src="img/modle/model4.jpg" alt="">
-                        <img src="img/modle/model5.jpg" alt="">
-                    </section>
-                    <section class="button">
-                        <img src="./img/SVG/dir_left.svg" alt="">
-                        <img src="./img/SVG/dir_right.svg" alt="">
-                    </section>
-                </div>
-                <div class="otherItems">
-                    <div class="OItitle">
-                        <h1>Other Items</h1>
-                        <section class="righticon">
-                            <img src="./img/SVG/dir_right.svg" alt="오른쪽 화살표">
-                        </section>
-                    </div>
-                    <figure>
-                        <img src="./img/otherItems/item1.jpg" alt="바지">
-                        <img src="./img/otherItems/item2.jpg" alt="구두">
-                        <img src="./img/otherItems/item3.jpg" alt="귀걸이">
-                        <img src="./img/otherItems/item4.jpg" alt="선글라스">
-                        <img src="./img/otherItems/item5.jpg" alt="지갑">
-                    </figure>
-                </div>
+                </section>
+                <section class="typoYSL">
+                    <img src="./img/ysl/typo1.svg" alt="">
+                    <img class="yslLogo" src="./img/ysl/yslLogo.svg" alt="">
+                </section>
             </div>
-            
         </div>
         <footer>
             <div class="fContainer">
