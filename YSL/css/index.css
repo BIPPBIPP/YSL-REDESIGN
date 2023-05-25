@@ -8,6 +8,7 @@ strong,b{font-weight: normal;}
 select{border-style: none;}
 
 /* 2.common */
+/* .sub4{display: none;} */
 html{
     /* border: 10px solid red; */
     box-sizing: border-box;
@@ -85,35 +86,31 @@ header{
     position: fixed;
     z-index: 1000;
 }
-
 .innerHead{
-    /* border: 1px solid salmon; */
+    border: 1px solid salmon;
     width: 1760px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
-
-.innerHead>.left_logo{
+.innerHead>.mainLogo{
     /* border: 1px solid gold; */
     display: flex;
-    justify-content:flex-start;
+    
     align-items: center;
-    width: 350px;
+    /* width: 350px; */
     height: 100%;
 }
-
-.left_logo>section{
-    width: 300px;
-    height: 100%;
-}
-.left_logo>.bar{
+.mainLogo>.bar{
     width:30px; 
     height: 15px;
     margin-right: 20px;
 }
-
+.mainLogo>.logo{
+    width: 288px;
+}
+.mainLogo>.logo img{width: 100%; object-fit: contain;}
 
 .innerHead>.topicon{
     /* border: 1px solid aqua; */
@@ -134,14 +131,15 @@ header{
 /* subpage Title */
 .toptitle{
     /* border: 1px solid red; */
-    width: 800px;
+    padding: 10px 350px 10px 170px;
     color: #fff;  
 }
 .toptitle>h1{
-    font-size: 5rem;
-    margin: 0 auto;   
+    font-size: 5rem; 
+    font-weight: bold;
     text-align: center;
 }
+
 .toptitle::after{
     content: '';
     width: 1760px;
@@ -151,10 +149,6 @@ header{
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-
-
 
 
 
@@ -824,18 +818,19 @@ main>.circle{
     bottom: -20px;
 }
 .subpage2>.mainContainer>.intro{
+    /* border: 1px solid aqua; */
     width: 1760px;
     margin: 0 auto;
-    margin-top: 30px;
     margin-bottom: 110px;
-    padding-top: 120px; 
+    padding-top: 150px; 
 }
 
 .subpage2>.mainContainer h2{ 
-    /* border: 1px solid skyblue; */
+    border: 1px solid skyblue;
     text-align: center;
     font-size: 4.5rem; 
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .mainContainer .intro>img{
@@ -855,7 +850,7 @@ main>.circle{
 }
 .mainContainer .explainYSL{
     /* border: 1px solid gold; */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
 }
 
@@ -882,7 +877,7 @@ main>.circle{
 }
 
 .mainContainer .typoYSL{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -892,7 +887,7 @@ main>.circle{
     /* border: 1px solid red; */
     width: 1000px;
     height: 628px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .mainContainer .typoYSL>img.yslLogo{
     /* border: 1px solid violet; */
@@ -925,18 +920,17 @@ main>.circle{
 }
 
 .subpage3>.mainContainer>.susTop{
-    /* border: 1px solid red; */
+    border: 1px solid skyblue;
     width: 1760px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    padding-top: 120px; 
+    margin-bottom: 110px;
+    padding-top: 150px; 
 }
-.mainContainer h2{
+.subpage3>.mainContainer h2{
     text-align: center;
     font-size: 4.5rem; 
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom:40px;
 }
 
 .tabMenu{
@@ -950,41 +944,44 @@ main>.circle{
 }
 .tabMenu>dt{
     border: 1px solid blue;
+    color: #939393;
     flex: 1;
     height: 40px;
+    cursor: pointer;
     padding: 10px 0;
     margin: 0 auto;
     font-size: 24px;
     position: relative;
-    opacity: 60%;
 }
 .tabMenu>dt::after{
     content: '';
     width: 60px;
     height: 1px;
-    background:#fff;
+    background: #939393;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;
 }
+.tabMenu> dt.on{
+    color: #fff;
+}
+
 .tabMenu>dd{
     border: 1px solid pink;
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     position: absolute;
     left: 0;
     top: 20%;
     display: none;
 }
-.tabMenu> dt.on{
-    opacity: 1;
-}
-.tabMenu>dt.on+dd{ 
+
+.tabMenu> dt.on + dd{ 
     display: block;
 }
 
-.contBox{
+.tabMenu .contBox{
     border: 1px solid violet;
     width: 100%;
     display: flex;
@@ -993,9 +990,8 @@ main>.circle{
 }
 .contBox>figure{
     width: 800px;
-    height: 452px;
 }
-.contBox>figure>img{
+.contBox>figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1025,12 +1021,17 @@ main>.circle{
     font-size: 40px;
 }
 .contP{
+    width: 100%;
     text-align: center; 
 }
 .contP>p{
     margin-bottom: 20px;
 }
-
+.contP>p.p_index {
+    border: 1px solid red;
+    font-weight: bold;
+    text-align: left;
+}
 
 
 
