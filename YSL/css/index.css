@@ -135,7 +135,7 @@ header{
     color: #fff;  
 }
 .toptitle>h1{
-    font-size: 5rem; 
+    font-size: 4.9rem; 
     font-weight: bold;
     text-align: center;
 }
@@ -285,9 +285,10 @@ main>.circle{
 .subpage1>.mainContainer{
     /* border: 1px solid gold; */
     width: 1760px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    position: relative;   
+    color: #fff;
+    text-align: center;
 }
 .subpage1>.mainContainer:after{
     content: '';
@@ -299,13 +300,12 @@ main>.circle{
     right: 0;
     bottom: -20px;
 }
-.subTop{
+.subpage1>.mainContainer>.subTop{
     /* border: 10px solid blue; */
     width: 1760px;
-    height: 780px;
-    margin-top: 50px;
-    /* margin-bottom: 50px; */
-    padding-top: 120px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    padding-top: 150px; 
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -591,8 +591,8 @@ main>.circle{
     /* border: 1px solid pink; */
     width: 1760px;
     margin: 0 auto;
-    margin-top: 30px;
     margin-bottom: 110px;
+    padding-top: 150px; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -943,28 +943,21 @@ main>.circle{
     position: relative;
 }
 .tabMenu>dt{
-    border: 1px solid blue;
+    border-bottom: 1px solid #939393;
     color: #939393;
     flex: 1;
     height: 40px;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 10px;
     margin: 0 auto;
-    font-size: 24px;
+    margin: 0 10px;
+    font-size: 30px;
     position: relative;
 }
-.tabMenu>dt::after{
-    content: '';
-    width: 60px;
-    height: 1px;
-    background: #939393;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-}
+
 .tabMenu> dt.on{
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .tabMenu>dd{
@@ -982,14 +975,17 @@ main>.circle{
 }
 
 .tabMenu .contBox{
-    border: 1px solid violet;
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
 }
 .contBox>figure{
-    width: 800px;
+    /* border: 1px solid violet; */
+    margin-right: 50px;
+    width: 750px;
+    height: 560px;
 }
 .contBox>figure img{
     width: 100%;
@@ -998,42 +994,60 @@ main>.circle{
 }
 
 .txtBox{
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
     width: calc(100% - 800px);
-    height: 100%;
     font-family: 'S-CoreDream-3Light';
-    padding-left: 50px;
+    
 }
 .txtBox>.contInfo{
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .contBox .contInfo>h3{
-    border: 1px solid pink;
+    /* border: 1px solid gold; */
     font-size: 60px;
     font-weight: bold;
-    margin: 0 60px;
+    margin-right: 60px;
 }
 .contBox .contInfo>h4{
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     font-size: 40px;
 }
-.contP{
-    width: 100%;
-    text-align: center; 
-}
+
 .contP>p{
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    word-spacing: 1px;
+    line-height: 2; 
     margin-bottom: 20px;
 }
-.contP>p.p_index {
-    border: 1px solid red;
-    font-weight: bold;
+
+/* Product의 설명은 V를 누르면 설명이 나오게 설정. */
+.contP span{font-size: 1.1rem; font-weight: bold; display: block;}
+.p_index{
+    width: 100%;
     text-align: left;
 }
-
-
+.p_index>h5{
+    font-size: 1.1rem;
+    font-weight:  bold;
+    padding: 10px 0;
+}
+.p_index>ul{
+    padding-left: 30px;
+    list-style: disc;
+}
+.p_index>ul>li{
+    padding: 5px 0;
+}
+blockquote{
+    font-size: 1.1rem; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 
 

@@ -148,7 +148,7 @@ header{
 
 /* subpage4 main */
 .subpage4{
-    border: 1px solid orange;
+    border: 10px solid orange;
     width: 1920px;
     height: auto;
     padding-top: 200px;
@@ -157,13 +157,15 @@ header{
 
 .backimg{
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 auto;
     width: 1760px;
     height: 1040px;
+    filter: drop-shadow(15px 15px 18px);
+    position: relative;
 }
 .backimg img{
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     filter:blur(3px);
@@ -171,7 +173,68 @@ header{
 }
 
 
+/* subpadge 4  content */
+.subpage4 .sub4Station{
+    border: 1px solid blue;
+    width: 1460px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+}
+.sub4Station>section{
+    /* flex: 1; */
+    color: #fff;
+}
+.subpage4 .sub4Station>ul{
+    border: 1px solid red;
+    
+}
+.subpage4 .slef7Tit>li{
+    border: 1px solid aqua;
+}
+.sub4Station  h1{
+    border: 1px solid orange;
+    font-size: 100px; 
+    font-weight: bold;
+}
+.self7_info{
+    border: 1px solid red;
+    font-size: 38px;
+}
+.self7Detail{
+    width: 946px;
+    font-size: 20px;
+}
 
+.tabMenu2{
+    border: 1px solid gold;
+    width: 340px;
+    display: flex;
+    position: relative;
+}
+.tabMenu2>dt{
+    color: #fff;
+    font-size: 20px;
+    /* border-right: 1px solid #fff ; */
+    flex: 1;
+    padding: 5px;
+    position: relative;
+}
+.tabMenu2>dt::after{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+dd{display: none;}
+.ddRight{display: none;}
 
 
 
