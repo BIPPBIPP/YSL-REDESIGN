@@ -31,14 +31,14 @@ body{
     border: 10px solid orange;
     margin: 0 auto;
     width: 1920px;
-    height: auto;
+    /* height: auto; */
     padding-top: 200px;
     padding-bottom: 100px;
     position: relative;
 }
 
 .backimg{
-    border: 1px solid #fff;
+    border: 1.2px solid #fff;
     border-radius: 20px;
     margin: 0 auto;
     width: 1760px;
@@ -46,110 +46,107 @@ body{
     filter: drop-shadow(15px 15px 18px);
     position: relative;
 }
-.backimg::after{
-    z-index: -10;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,rgba(0, 0, 0, 0.2),transparent);
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.backimg>img{
+.backimg img{
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    filter:blur(3px);
     object-fit: cover;
+    filter: brightness(0.7) blur(3px);
 }
 
 
 /* subpadge 4  content */
-.subpage4 .sub4Station{
-    
+.self7{
     border: 1px solid blue;
-    width: 1460px;
-    height: 940px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.sub4Station>section{
-    /* flex: 1; */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1760px;
+    height: 1040px;
     color: #fff;
-    /* position: absolute;
-    left: 0;
-    top: 0; */
 }
-
-.sub4Station  h1{
+.self7  h1{
     border: 1px solid orange;
+    width: fit-content;
     font-size: 100px; 
     font-weight: bold;
+    margin: 30px 0;
+    margin-left: 50px;
     padding: 20px;
+    box-sizing: border-box;
 }
-.self7_info{
-    display: none;
-    border: 1px solid red;
+.self7Info{
+    /* border: 1px solid lime; */
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+.self7Left{
+    border: 1px solid violet;
+    margin-left: 50px;
     font-size: 48px;
     position: absolute;
     left: 0;
-    top: 600px;
-    /* transform: translateY(-50%); */
+    top: 50%;
+    transform: translateY(-50%);
 }
-.self7_info li{padding-top: 20px;}
-.self7_info li:first-of-type{padding-top: 0;}
-.self7Detail{
-    display: none;
+.self7Left>ul>li{padding-top: 20px;}
+.self7Left>ul>li:first-of-type{padding-top: 0;}
+
+.self7right{
     border: 1px solid pink;
+    margin-right: 50px;
     width: 946px;
-    position: relative;
-}
-.self7Detail figure{
-    /* border: 1px solid red; */
-    width: 946px;
-    height: 536px;
     position: absolute;
     right: 0;
     top: 0;
 }
-.self7Detail figure>video{
-    /* display: block; */
+.self7right>figure{
+    border: 1px solid red;
+    width: 946px;
+    height: 536px;
+}
+.self7right>figure>video{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.self7Detail .down{
+.self7right>.self7P{
+    border: 1px solid red;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.sub4Cont{
+    border: 1px solid gold;
     position: absolute;
-    right: 0;
-    top: 540px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 1760px;
+    height: 1040px;
     
 }
-.self7Detail .down>p{font-size: 25px; padding: 20px 0;}
-
-.tabMenu2{
-    /* border: 1px solid gold; */
-    width: 340px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-}
-.tabMenu2>dt{
-    /* border: 1px solid red; */
+.sub4Cont>dt{
+    border: 1px solid red;
     color: #ffffffa1;
-    font-size: 20px;
-    width: 90px;
+    font-size: 24px;
+    width: 140px;
+    height: 30px;
     cursor: pointer;
-    padding: 5px 10px;
-    position: relative;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    float: right;
+    margin-top: 50px;
 }
-.tabMenu2>dt::before{
+.sub4Cont>dt::before{
     /* border: 1px solid red; */
     content: '';
     width: 1.5px;
@@ -161,58 +158,7 @@ body{
     transform: translateY(-50%);
 } 
 
-.tabMenu2 dt.on {color: #fff;}
-.tabMenu2 dt.on:before{background: #fff;}
+.sub4Cont dt.on {color: #fff;}
+.sub4Cont dt.on:before{background: #fff;}
 
-dd{
-    border: 1px solid aqua;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    display: none;
-}
-
-.tabMenu> dt.on + dd.on{ 
-    display: block;
-}
-
-.tabMenu2 dd{
-    border: 1px solid blue;
-    position: relative;
-}
-
-dd.on .ddLeft p{
-    border: 1px solid red;
-    color: #fff;
-    font-size: 48px;
-    position: absolute;
-    left: 0;
-    top: 600px;
-}
-dd.on .ddRight{
-    border: 1px solid red;
-    position: relative;
-}
-.ddRight>.swiper{
-    width: 960px;
-    height: 314px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.ddRight .trian{
-    width: 700%;
-    height: 100%;
-    display: flex;
-}
-
-.ddRight .trian>li{
-    flex: 1;
-    position: rel;
-}
-
-.ddRight .trian>li img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+dd{display: none;}
