@@ -143,7 +143,6 @@ body{
     cursor: pointer;
     padding-left: 10px;
     padding-bottom: 10px;
-    float: right;
     margin-top: 50px;
 }
 .sub4Cont>dt::before{
