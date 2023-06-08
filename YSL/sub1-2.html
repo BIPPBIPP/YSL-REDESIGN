@@ -9,101 +9,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
     <title>subpage1-2 - product 상세페이지</title>
 </head>
 <body>
-    <div class="menuContainer">
-        <div class="menuLogo">
-            <div class="btnMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="Mlogo">
-                <img src="./img/SVG/logo_black.svg" alt="">
-            </div>
-        </div>
-        <ul class="Menu1">
-            <li class="collect"><a href="#"> summer collection 23</a>
-                <ul>
-                    <li><a href="#"></a>woman's</a></li>
-                    <li><a href="#"></a>man's</a></li>
-                </ul>
-            </li>
-            <a href="#"><li>woman</li></a>
-            <a href="#"><li>man</li></a>
-            <a href="#"><li>accersory</li></a>
-        </ul>
-        <ul class="Menu2">
-            <li>la masion
-                <ul>
-                    <a href="#"><li>saint laurent</li></a>
-                    <a href="#"><li>Susbility</li></a>
-                </ul>
-            </li>
-            <a href="#"><li>collection</li></a>
-            <a href="#"><li>saint laurent self</li></a>
-        </ul>
-        <div class="bottomImg">
-            <img src="./img/menu/menu_IMAGE.jpg" alt="">
-        </div>
-    </div>
-    <div class="container">
+    <div class="topWrap">
         <header>
             <div class="innerHead">
-                <div class="mainLogo">
-                    <section class="bar">
-                        <a href="#" >
-                            <img  src="./img/SVG/menubar.svg" alt="메뉴바" >
-                        </a>
-                    </section>
-                    <section class="logo">
+                <div class="Head1">
+                    <div class="btnMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo">
                         <a href="#">
-                            <img src="./img/SVG/logo.svg" alt="saint laurent logo">
+                            <img src="./img/SVG/logo.svg" alt="">
                         </a>
-                    </section> 
+                    </div>
                 </div>
-                <div class="toptitle sub1Top">
-                    <h1>Summer Collection 23 Woman's</h1>
+                <div class="toptitle subtit1">
+                    <h1>Summer Collection Woman's 23</h1>
                 </div>
-                <div class="topicon">
-                    <a href="#"><img src="./img/SVG/search_icon.svg"  alt="검색 돋보기"></a>            
-                    <a href="#"><img src="./img/SVG/login_icon.svg" alt="로그인 아이콘"></a>
-                    <a href="#"><img src="./img/SVG/shop_icon.svg" lt="장바구니 아이콘"></a>            
+                <div class="Head2">
+                    <div class="topicon">
+                        <a href="#"><img src="./img/SVG/search_icon.svg"  alt="검색 돋보기"></a>            
+                        <a href="#"><img src="./img/SVG/login_icon.svg" alt="로그인 아이콘"></a>
+                        <a href="#"><img src="./img/SVG/shop_icon.svg" lt="장바구니 아이콘"></a>            
+                    </div>
                 </div>
             </div>
         </header>
-        <div class="subpage1_2">
+
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#"> 
+                        summer collection 23
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="gnb_submenu">
+                        <li><a href="#">woman's</a></li>
+                        <li><a href="#">man's</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        woman
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="gnb_submenu">
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">accersory</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        man
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="gnb_submenu">
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">accersory</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="lnb">
+                <li>
+                    <a href="#"> 
+                        la masion
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="lnb_submenu">
+                        <li><a href="#">saint laurent</a></li>
+                        <li><a href="#">Susbility</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        collection
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="lnb_submenu">
+                        <li><a href="#">woman's f/w 2023</a></li>
+                        <li><a href="#">man's f/w 2023</a></li>
+                        <li><a href="#">woman's s/s 2023</a></li>
+                        <li><a href="#">man's s/s 2023</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        saint laurent self
+                        <span class="depi"></span>
+                    </a>
+                    <ul class="lnb_submenu">
+                        <li><a href="#">self07</a></li>
+                        <li><a href="#">self06</a></li>
+                        <li><a href="#">self05</a></li>
+                        <li><a href="#">self04</a></li>
+                        <li><a href="#">self03</a></li>
+                        <li><a href="#">self02</a></li>
+                        <li><a href="#">self01</a></li>
+                        <li><a href="#">self</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menuImg">
+                <img src="./img/menu/menu_IMAGE.jpg" alt="">
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <main class="subpage1_2">
             <div class="mainContainer">
                 <div class="topMain">
                     <figure class="mainPoster">
                         <img src="./img/sunglass/main.jpg" alt="">
                     </figure>
                     <figure class="productPic">
-                        <img src="./img/sunglass/product1-80.jpg" alt="">    
-                        <img src="./img/sunglass/product2-80.jpg" alt="">        
+                        <img src="./img/sunglass/product1.svg" alt="선글라스 상품 이미지">           
                     </figure>
                     <div class="productInfo">
                         <div class="explain">
-                            <h1>SL M119/F BLAZE</h1>
+                            <h1><a href="#">SL M119/F BLAZE</a></h1>
                             <h2> $ 879.18</h2>
                             <h3>Color</h3>
                             <ul class="size">
                                 <li><h3>Size</h3>
                                     <ul>
-                                        <li>XS</li>
-                                        <li>S</li>
-                                        <li>M</li>
-                                        <li>L</li>
+                                        <li><a href="#">XS</a></li>
+                                        <li><a href="#">S</a></li>
+                                        <li><a href="#">M</a></li>
+                                        <li><a href="#">L</a></li>
                                     </ul>
                                 </li>
                             </ul>
                             <figure class="proIcon">
-                                <img src="./img/SVG/shop_black.svg" alt="">
-                                <img src="./img/SVG/heart.svg" alt="">
-                                <img src="./img/SVG/sharing.svg" alt="">
+                                <a href="#"><img src="./img/SVG/shop_black.svg" alt=""></a>
+                                <a href="#"><img src="./img/SVG/heart.svg" alt=""></a>
+                                <a href="#"><img src="./img/SVG/sharing.svg" alt=""></a>
                             </figure>
                             <p>
                                 선글라스. 오버사이즈 캣아이 아세테이트 프레임, 나일론 렌즈, YSL 모노그램을 장식한 와이드 템플.
@@ -113,36 +164,99 @@
                 </div>
                 <div class="modelWear">
                     <h1>MODEL Wearing</h1>
-                    <section>
-                        <img src="img/modle/model1.jpg" alt="">
-                        <img src="img/modle/model2.jpg" alt="">
-                        <img src="img/modle/model3.jpg" alt="">
-                        <img src="img/modle/model4.jpg" alt="">
-                        <img src="img/modle/model5.jpg" alt="">
-                    </section>
-                    <section class="button">
-                        <img src="./img/SVG/dir_left.svg" alt="">
-                        <img src="./img/SVG/dir_right.svg" alt="">
-                    </section>
+                    <div class="station4 swiper">
+                        <ul class="train4 swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model3.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model6.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model7.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model8.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/modle/model9.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 <div class="otherItems">
-                    <div class="OItitle">
-                        <h1>Other Items</h1>
-                        <section class="righticon">
-                            <img src="./img/SVG/dir_right.svg" alt="오른쪽 화살표">
-                        </section>
+                    <h1 class="OItit">Other Items</h1>
+                    <div class="station5 swiper">
+                        <ul class="train5 swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item1.jpg" alt="바지"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item2.jpg" alt="구두"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/otherItems/item3.jpg" alt="귀걸이"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item4.jpg" alt="선글라스"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item5.jpg" alt="지갑"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item1.jpg" alt="바지"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item2.jpg" alt="구두"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./img/otherItems/item3.jpg" alt="귀걸이"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item4.jpg" alt="선글라스"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="./img/otherItems/item5.jpg" alt="지갑"></a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <figure>
-                        <img src="./img/otherItems/item1.jpg" alt="바지">
-                        <img src="./img/otherItems/item2.jpg" alt="구두">
-                        <img src="./img/otherItems/item3.jpg" alt="귀걸이">
-                        <img src="./img/otherItems/item4.jpg" alt="선글라스">
-                        <img src="./img/otherItems/item5.jpg" alt="지갑">
-                    </figure>
                 </div>
             </div>
-            
-        </div>
+        </main>
+
+
         <footer>
             <div class="fContainer">
                 <div class="fLogo">
