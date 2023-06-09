@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
     <title>subpage1 - product</title>
 </head>
 <body>
@@ -127,7 +137,7 @@
     <div class="container">
         <div class="subpage1">
             <div class="mainContainer">
-                <div class="subTop">
+                <div class="mainTop">
                     <div class="mainLeft">
                         <img class="circleLeft" src="./img/SVG/circle_2.svg" alt="">
                         <img class="typoLeft" src="./img/SVG/typograpy_summer23.svg" alt="">
@@ -137,88 +147,96 @@
                     </div>
                 </div>
                 <div class="clothes">
-                    <div class="subTitle">
+                    <div class="contTitle1">
                         <h1> New Collection</h1>
                     </div>
-                    <ul class="topclo">
-                        <li class="left">
-                            <ul>
-                                <li>
-                                    <img src="./img/clothes_out/out1.jpg" alt="out1">
+                    <div class="cloSlidArea">
+                        <div class="staiton2 variable-width">
+                            <ul class="train2 swiper-wrapper">  
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out1.jpg" alt="out1"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_out/out2.jpg" alt="out2">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out2.jpg" alt="out2"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_out/out3.jpg" alt="out3">
+                                <li class="swiper-slide"> 
+                                    <a href="#"><img src="./img/clothes_out/out3.jpg" alt="out3"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_out/out4.jpg" alt="out4">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out4.jpg" alt="out4"></a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li class="right">
-                            <ul>
-                                <li>
-                                    <img src="./img/clothes_out/out5.jpg" alt="out5">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out5.jpg" alt="out5"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_out/out6.jpg" alt="out6">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out6.jpg" alt="out6"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_out/out7.jpg" alt="out7">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/clothes_out/out7.jpg" alt="out7"></a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <ul class="bottomclo">
-                        <li class="left">
-                            <ul>
-                                <li>
-                                    <img src="./img/clothes_top/top1.jpg" alt="top1">
+                        </div>
+                        <div class="staiton3 swiper">
+                            <ul class="train3 swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce1.jpg" alt="acce1"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_top/top2.jpg" alt="top2">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce2.jpg" alt="acce2"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_top/top3.jpg" alt="top3">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce3.jpg" alt="acce3"></a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li class="right">
-                            <ul>
-                                <li>
-                                    <img src="./img/clothes_top/top4.jpg" alt="top4">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce4.jpg" alt="acce4"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_top/top5.jpg" alt="top5">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce5.jpg" alt="acce5"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_top/top6.jpg" alt="top6">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce6.jpg" alt="acce6"></a>
                                 </li>
-                                <li>
-                                    <img src="./img/clothes_top/top7.jpg" alt="top7">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="./img/acce/acce7.jpg" alt="acce7"></a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="btnNext">
+                            <a href="#">
+                                <img src="./img/SVG/dir_right.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="btnPrev">
+                            <a href="#">
+                                <img src="./img/SVG/dir_left.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="photos">
-                    <div class="photoTitle">
+                    <div class="contTitle2">
                         <h1>Photoes</h1>
                     </div>
-                    <div class="photo1">
-                        <section class="photoslide">
-                            <div class="leftpho">
-                                <img src="./img/collect_photo/photo1.jpg" alt="">
-                            </div>
-                            <div class="midpho">
-                                <img src="./img/collect_photo/photo2.jpg" alt="">
-                            </div>
-                            <div class="rightpho">
-                                <img src="./img/collect_photo/photo3.jpg" alt="">
-                            </div>
-                        </section>
+                    <div class="phoSlidArea">
+                        <div class="station4 swiper">
+                            <ul class="train4 swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/collect_photo/photo1.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/collect_photo/photo2.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/collect_photo/photo3.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="photo2">
                         <section class="section1">

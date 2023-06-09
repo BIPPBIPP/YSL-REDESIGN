@@ -17,9 +17,22 @@ $(document).ready(function(){
     });
 
 
+    // sub1page slide
+   
+    // $('.variable-width').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     centerMode: true,
+    //     variableWidth: true
+    //   });
+
+
+
     // sub1-2 page
 
-    let swiper4 = new Swiper(".station4",{
+    let swiper5 = new Swiper(".station5",{
         slidesPerView: 3,
         spaceBetween: 10,
         centeredSlides: true,
@@ -30,7 +43,7 @@ $(document).ready(function(){
         },
       
     });
-    let swiper5 = new Swiper(".station5",{
+    let swiper6 = new Swiper(".station6",{
         slidesPerView: 5,
         spaceBetween: 5,
         centeredSlides: true,
@@ -44,16 +57,9 @@ $(document).ready(function(){
     
 
 
-// subpage 3 
+ 
 
-$(".tabMenu1>dt").click(function(e){
-    e.preventDefault()
-    // 1.dt태그들이 on클래스가 지워져야 함
-    // 2.내가 클릭한 dt태그한테만 on클래스가 추가
-    $(".tabMenu1>dt").removeClass("on")
-    $(this).addClass("on")
-    // this는 내가 클릭한 dt태그를 지칭.
-})
+
 
 
 })
