@@ -5,20 +5,24 @@ $(document).ready(function(){
 // 1. 메뉴 버튼 클릭 후, 메뉴창 오픈
 $(".btnMenu").click(function(e){
 
- e.preventDefault()
+     e.preventDefault()
 //  리턴되어 저장되는 함수를 막아줌
 
     if(menuState==false){
         // 메뉴가 현재 닫혀있는 상태 ->여는 기능
         $(".btnMenu").addClass("close")
         $("nav").addClass("on")
+        $(".logo>a").addClass("on")
         menuState = true
     }else{
         // 메뉴가 현재 열려 있는 상태 -> 닫는 기능
         $(".btnMenu").removeClass("close")
         $("nav").removeClass("on")
+        $(".logo>a").removeClass("on")
         menuState = false
     }
+
+
     
  
    
@@ -65,6 +69,17 @@ if($(this).hasClass("on")==true){
     let lnb2dep = $(this).children("ul").children().length
     $(this).css("height",(lnb2dep+1)*50+"px")
     $(this).addClass("on")
+}
+
+// 마지막 뎁스를 클릭했을 때, img가 따라서 내려가는 경우
+if($(this).index()==2){
+    // index()는 뎁스의 순서를 선택할 때
+    if($(this).hasClass("on")==true){
+        $(".menuImg").addClass("hidden")
+    }else{
+        $(".menuImg").removeClass("hidden")
+    }
+    
 }
 // => 열고 닫는 메뉴 완성
 

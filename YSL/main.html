@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pc.css">
+    <link rel="stylesheet" href="./css/mo.css">
+    <!-- swiper css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- jqurey -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- js -->
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
     <title>Saint Laurent</title>
@@ -20,7 +28,33 @@
 
     <!-- headr + menu 구성 -->
     <div class="topWrap">
-        <header>
+        <header class="mo">
+            <div class="innerHead">
+                <div class="Head1">
+                    <div class="btnMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/SVG/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="toptitle">
+                    <h1></h1>
+                </div>
+                <div class="Head2">
+                    <div class="topicon">
+                        <a href="#"><img src="./img/SVG/search_icon.svg"  alt="검색 돋보기"></a>            
+                        <a href="#"><img src="./img/SVG/login_icon.svg" alt="로그인 아이콘"></a>
+                        <a href="#"><img src="./img/SVG/shop_icon.svg" lt="장바구니 아이콘"></a>            
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="pc">
             <div class="innerHead">
                 <div class="Head1">
                     <div class="btnMenu">
@@ -56,7 +90,7 @@
                         <span class="depi"></span>
                     </a>
                     <ul class="gnb_submenu">
-                        <li><a href="#">woman's</a></li>
+                        <li><a href="./sub1.html">woman's</a></li>
                         <li><a href="#">man's</a></li>
                     </ul>
                 </li>
@@ -92,8 +126,8 @@
                         <span class="depi"></span>
                     </a>
                     <ul class="lnb_submenu">
-                        <li><a href="#">saint laurent</a></li>
-                        <li><a href="#">Susbility</a></li>
+                        <li><a href="./sub2.html">saint laurent</a></li>
+                        <li><a href="./sub3.html">Susbility</a></li>
                     </ul>
                 </li>
                 <li>
@@ -157,9 +191,7 @@
             </div>
             
             <div class="mainAct">
-                <div class="circle">
-                    <img src="./img/SVG/circle.svg" alt="circle">
-                </div>
+                <div class="circle"></div>
                 <div class="typo">
                     <a href="./sub1.html">
                         <div class="triangle">
