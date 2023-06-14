@@ -11,7 +11,7 @@ $(document).ready(function(){
         e.preventDefault()
         count++;
         if(count>9){count=0}
-        $(".train2").css("transform","translateX("+(-10*count)+"%)")
+        $(".train2").css("transform","translateX("+(-10*count)+"%)").css()
     })
 
 
@@ -35,11 +35,31 @@ $(document).ready(function(){
             centerMode: true,
             centerPadding: '80px',
             slidesToShow: 3,
-            slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
             nextArrow:$('.next'),
             prevArrow:$('.prev'),
+            responsive: [
+                {
+                  breakpoint: 1760,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '80px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+              
         });
 
 // 2-2. popup창

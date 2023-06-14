@@ -21,25 +21,41 @@ $(document).ready(function(){
     // sub1-2 page
 
     let swiper5 = new Swiper(".station5",{
-        slidesPerView: 3,
-        spaceBetween: 10,
         centeredSlides: true,
         pagination: {
             el:".swiper-pagination",
             type: "bullets",
             clickable: true,
         },
+        breakpoints:{
+            280:{
+                slidesPerView:1,
+                spaceBetween:30,
+            },
+            768:{
+                slidesPerView:3,
+                spaceBetween:10,
+            }
+        }
       
     });
     let swiper6 = new Swiper(".station6",{
-        slidesPerView: 5,
-        spaceBetween: 5,
         centeredSlides: true,
         pagination: {
             el:".swiper-pagination",
             type: "bullets",
             clickable: true,
         },
+        breakpoints:{
+            280:{
+                slidesPerView:1,
+                spaceBetween:0,
+            },
+            768:{
+                slidesPerView:5,
+                spaceBetween:5,
+            }
+        }
       
     });
     
